@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <table id="students">
+        </table>
+
+        <script>
+            var names = [
+                "Mustafa",
+                "Abdur-rauf",
+                "Ayan",
+                "Prana",
+                "Muhib",
+                "Sarah",
+                "Vishvah",
+                "Ranim",
+                "Daniel",
+                "Sreevatsal",
+                "Tyler",
+                "Arya",
+                "Elakshan",
+                "Amena",
+                "Zarif",
+                "Aburvan",
+                "Anmanowarul",
+                "Ashwin",
+                "Daanisha",
+                "Pantho",
+                "Zaara",
+                "Thivakaran",
+                "Anikait",
+                "Pranav",
+                "Abraar",
+                "Anisha",
+                "Mahjabeen"
+            ];
+            var table = document.getElementById("students");
+            
+            names.forEach(function each(name) {
+                var row = table.insertRow(0);
+
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+
+                cell1.innerHTML = name;
+                cell2.innerHTML = "<input type=\"checkbox\">";
+            });
+
+            
+        </script>
+    </body>
+</html>
